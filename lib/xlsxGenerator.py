@@ -1,10 +1,10 @@
 import openpyxl
-from lib import getData
-from lib import logicData
-from lib import setData
+import getData
+import logicData
+import setData
 
 # configファイルを取得する
-configData = getData.getConfigFile('./con/config.ini')
+configData = getData.getConfigFile('.././con/config.ini')
 
 # csvデータの取得
 inputCsvData = getData.getInputCsv(configData.name.inputCsvName)
